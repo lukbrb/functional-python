@@ -50,6 +50,7 @@ data = tuple(map(lambda x: {'ID': x.ID, 'Date': x.Date, 'Element': x.Element, 'D
 _0514 = tuple(filter(lambda x: x['Year'] != year, data))
 _15 = tuple(filter(lambda x: x['Year'] == year, data))
 
+# groupby par jour et maximum/minimum de température sur cette journée
 max_0514 = reduce(groupe_max, _0514, {})
 min_0514 = reduce(groupe_min, _0514, {})
 
@@ -64,6 +65,7 @@ min_record_15 = tuple(filter(lambda x: x['2015'] < x['2005-2014'], min_all))
 
 
 day_to_int = {day: num_day for day, num_day in zip(max_0514.keys(), list(range(366)))}
+
 plt.figure(figsize=(10,10))
 
 plt.plot(max_0514.values(), 
@@ -98,5 +100,3 @@ plt.gca().fill_between(range(len(max_0514.values())),
                        facecolor='purple', alpha=0.1)
 
 plt.show()
-
-
