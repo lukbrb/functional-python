@@ -6,9 +6,9 @@ from functools import reduce
 import numpy as np
 import matplotlib.pyplot as plt
 
-PLOT = False
+PLOT = True
 
-filename = "data/fb441e62df2d58994928907a91895ec62c2c42e6cd075c2700843b89.csv"
+filename = "data/weatherdata1.csv"
 year = 2015
 
 
