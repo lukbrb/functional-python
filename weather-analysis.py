@@ -79,7 +79,6 @@ if PLOT:
                 c = 'black', 
                 label = "Record Breaking High in "+ str(year))
 
-    print([day_to_int[day_rec['day']] for day_rec in min_record_15])
     plt.scatter([day_to_int[day_rec['day']] for day_rec in min_record_15], 
                 [value["2015"] for value in min_record_15], 
                 c = 'blue', 
