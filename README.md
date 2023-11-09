@@ -39,3 +39,6 @@ puis simplement
 ```console
 ./get_data.sh
 ````
+
+Finalement, on obtient le graphique suivant
+![Graphique des températures analysées](data/fig.png)
