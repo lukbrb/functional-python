@@ -5,7 +5,7 @@ Pour premier exemple, l'analyse de données métérologiques en mimiquant le [co
 L'idée est de performer cette analyse en pure Python, et en suivant les principes de programmation fonctionnelle ; notamment l'immutabilité des structures de
 données, et la transofrmation des données par de simples fonctions mathématiques.
 
-## Implémntation en SQL
+## Implémentation en SQL
 
 Une implémentation est disponible en SQL, comme simple exemple d'exploration. Pour utiliser le script SQL, assurez-vous d'avoir `sqlite3` installé, puis
 lancez la commande
@@ -26,7 +26,7 @@ puis `min_records_15`
 sqlite3 -csv data/weatherdata.db "select * from min_record_15;" > data/min_records_15.csv
 ``````
 
-Les arguments `-header` et `csv` permettent respectivement d'afficher les en-têtes de la table, et de séparer les valeurs par des virgules.
+Les arguments `-header` et `-csv` permettent respectivement d'afficher les en-têtes de la table, et de séparer les valeurs par des virgules.
 
 Alternativement, le script `get_data.sh` se charge de lancer ces deux commandes. Pour le lancer, s'assurer que le script est exécutable
 
