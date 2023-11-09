@@ -1,1 +1,4 @@
 test.py
+data/max_records_15.csv
+data/min_records_15.csv
+data/weatherdata.db
